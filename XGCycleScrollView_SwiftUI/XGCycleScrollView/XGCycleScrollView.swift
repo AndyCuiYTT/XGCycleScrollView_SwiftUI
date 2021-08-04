@@ -12,32 +12,34 @@ struct XGCycleScrollView: View {
     // 图片地址
     var imagesUrl: [String] = []
 
+    // 图片间距
+    var spacing: CGFloat = 10
+
+    // 设置图片圆角
+    var cornerRadius: CGFloat = 10
+
+    // 是否自动播放
+    var isAuto: Bool = true
+
+    // 图片点击回调
+    var imageTapGesture: ((Int) -> Void)?
+
     // 滑动速度
     private let timer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
 
     // 当前位置索引
     @State private var currentIndex: Int = 1
 
-    // 图片间距
-    var spacing: CGFloat = 10
-
     // 拖拽偏移量
     @State private var dragOffsetX: CGFloat = .zero
 
-    var cornerRadius: CGFloat = 10
-
-    var imageTapGesture: ((Int) -> Void)?
-
     // 是否需要动画
     @State private var isAnimation: Bool = true
-
-    var isAuto: Bool = true
 
     var body: some View {
 
         GeometryReader(content: { geometry in
             let currentOffsetX = CGFloat(currentIndex) * (geometry.size.width + spacing)
-
             ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom), content: {
                 HStack(alignment: .center, spacing: spacing, content: {
                     ForEach(0 ..< getImageCount()) {
