@@ -11,6 +11,8 @@
 		4BF430F926BA76DB00AAE28C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF430F826BA76DB00AAE28C /* ContentView.swift */; };
 		4BF430FB26BA76DE00AAE28C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF430FA26BA76DE00AAE28C /* Assets.xcassets */; };
 		4BF430FE26BA76DE00AAE28C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF430FD26BA76DE00AAE28C /* Preview Assets.xcassets */; };
+		4BF4310826BA76EE00AAE28C /* XGCycleScrollImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4310626BA76EE00AAE28C /* XGCycleScrollImage.swift */; };
+		4BF4310926BA76EE00AAE28C /* XGCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4310726BA76EE00AAE28C /* XGCycleScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		4BF430FA26BA76DE00AAE28C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BF430FD26BA76DE00AAE28C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4BF430FF26BA76DE00AAE28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BF4310626BA76EE00AAE28C /* XGCycleScrollImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XGCycleScrollImage.swift; sourceTree = "<group>"; };
+		4BF4310726BA76EE00AAE28C /* XGCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XGCycleScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 		4BF430F526BA76DB00AAE28C /* XGCycleScrollView_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				4BF4310526BA76EE00AAE28C /* XGCycleScrollView */,
 				4BF430F626BA76DB00AAE28C /* XGCycleScrollView_SwiftUIApp.swift */,
 				4BF430F826BA76DB00AAE28C /* ContentView.swift */,
 				4BF430FA26BA76DE00AAE28C /* Assets.xcassets */,
@@ -67,6 +72,15 @@
 				4BF430FD26BA76DE00AAE28C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4BF4310526BA76EE00AAE28C /* XGCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				4BF4310626BA76EE00AAE28C /* XGCycleScrollImage.swift */,
+				4BF4310726BA76EE00AAE28C /* XGCycleScrollView.swift */,
+			);
+			path = XGCycleScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +153,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BF430F926BA76DB00AAE28C /* ContentView.swift in Sources */,
+				4BF4310826BA76EE00AAE28C /* XGCycleScrollImage.swift in Sources */,
 				4BF430F726BA76DB00AAE28C /* XGCycleScrollView_SwiftUIApp.swift in Sources */,
+				4BF4310926BA76EE00AAE28C /* XGCycleScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
